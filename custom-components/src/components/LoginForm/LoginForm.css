@@ -32,6 +32,10 @@ button:hover {
   opacity: 0.8;
 }
 
+.login-form {
+  color: rgb(56, 113, 159);
+}
+
 .username {
   color: rgb(56, 113, 159);
 }

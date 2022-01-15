@@ -9,7 +9,7 @@ export default function LoginForm() {
       <form action="" method="post">
        
       <div className="container">
-      <h1>LOGIN FORM</h1>
+       <a className="login-form"><h1>LOGIN FORM</h1></a> 
         <label className="username"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required />
 
