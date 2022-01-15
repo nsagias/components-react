@@ -8,7 +8,7 @@ export default function SignUpForm() {
         <div className="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
-          <hr />
+
           
           <label><b>Email</b></label>
           <input type="email" placeholder="Enter Email" name="email" required />
@@ -26,7 +26,7 @@ export default function SignUpForm() {
             <button type="button" className="cancelbtn">Cancel</button>
             <button type="submit" className="signupbtn">Sign Up</button>
           </div>
-          
+
         </div>
       </form>
     
