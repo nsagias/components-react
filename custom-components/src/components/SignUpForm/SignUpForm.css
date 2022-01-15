@@ -12,7 +12,7 @@ form {
 input[type=email], input[type=email], input[type=password] {
   width: 100%;
   padding:  12px 20px;
-  margin: 5px 0 22px 0;
+  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -21,6 +21,22 @@ input[type=email], input[type=email], input[type=password] {
 input[type=email]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
+}
+
+.signup-form-title {
+  color: rgb(56, 113, 159);
+}
+
+.email-label {
+  color: rgb(56, 113, 159);
+}
+
+.password-label {
+  color: rgb(56, 113, 159);
+}
+
+.password-confirm-label {
+  color: rgb(56, 113, 159);
 }
 
 

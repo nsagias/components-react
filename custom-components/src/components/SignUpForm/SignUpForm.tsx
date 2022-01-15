@@ -6,18 +6,18 @@ export default function SignUpForm() {
     <>
       <form className="signup-form" action="/action_page.php" >
         <div className="container">
-          <h1>Sign Up</h1>
-          <p>Please fill in this form to create an account.</p>
+          <a className="signup-form-title"><h1>Sign Up</h1></a>
+          <p>Enter email and password to create an account.</p>
         
-          
-          <label><b>Email</b></label>
+
+          <label className="email-label"><b>Email</b></label>
           <input type="email" placeholder="Enter Email" name="email" required />
 
-          <label><b>Password</b></label>
+          <label className="password-label"><b>Password</b></label>
           <input type="password" placeholder="Enter Password" name="psw" required />
 
-          <label><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+          <label className="password-confirm-label"><b>Confirm Password</b></label>
+          <input type="password" placeholder="Confirm Password" name="psw-repeat" required />
           
           
           <p>By creating an account you agree to our <a className="t-c" href="#">Privacy</a>.</p>
