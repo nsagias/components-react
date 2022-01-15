@@ -19,19 +19,21 @@
 .blue:hover {
   background: rgb(71,141,200);
   color: white;
+  transition-duration: 0.4s;
 }
 
-/* Blue */
+/* Blue Inverse */
 .blue-inverse {
   background-color: rgb(71,141,200);
   border-color: rgb(71,141,200);
-  transition-duration: 0.4s;
   color: white;
+  transition-duration: 0.4s;
 }
 
 .blue-inverse:hover {
   background: white;
   color: rgb(71,141,200);
+  transition-duration: 0.4s;
 }
 
 /* Yellow */
@@ -43,20 +45,23 @@
 
 .yellow:hover {
   background: rgb(255,202,72);
-  transition-duration: 0.4s;
   color: white;
+  transition-duration: 0.4s;
 }
 
 
-/* Yellow */
+/* Yellow Inverse */
 .yellow-inverse {
+  background-color: rgb(255,202,72);
   border-color: rgb(255,202,72);
-  color: rgb(255,202,72);
+  color: white;
+  transition-duration: 0.4s;
 }
 
 .yellow-inverse:hover {
-  background: rgb(255,202,72);
-  color: white;
+  background: white;
+  color: rgb(255,202,72);
+  transition-duration: 0.4s;
 }
 
 
