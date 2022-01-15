@@ -13,17 +13,31 @@ export default function SignUpForm() {
 
   return (
     <>
-      <form className="signup-form" action="/action_page.php" >
+      <form className="signup-form" onSubmit={onSubmit} >
         <div className="container">
           <a className="signup-form-title"><h1>Sign Up</h1></a>
           <p>Enter email and password to create an account.</p>
         
 
           <label className="email-label"><b>Email</b></label>
-          <input type="email" placeholder="Enter Email" name="email" required />
+          <input
+            type="email"
+            name="email"
+            value={email}
+            placeholder="Enter Email"
+            onChange={(event) => setEmail(event.target.value)}
+            required
+          />
 
           <label className="password-label"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required />
+          <input
+            type="password"
+            name="psw"
+            value={password}
+            placeholder="Enter Password"
+            onChange={(event) => setPassword(event.target.value)}
+            required
+          />
 
           <label className="password-confirm-label"><b>Confirm Password</b></label>
           <input type="password" placeholder="Confirm Password" name="psw-repeat" required />
