@@ -1,5 +1,5 @@
 .button-pill {
-  border: 2px solid black;
+  border: 1px solid black;
   background-color: white;
   color: black;
   padding: 8px 20px;
@@ -22,18 +22,26 @@
   transition-duration: 0.4s;
 }
 
+
+
+
 /* Blue Inverse */
 .blue-inverse {
   background-color: rgb(71,141,200);
   border-color: rgb(71,141,200);
+  border: 2px solid rgba(71,141,200, 0.5);
   color: white;
   transition-duration: 0.4s;
+ 
 }
 
 .blue-inverse:hover {
-  background: white;
-  color: rgb(71,141,200);
+  background: rgb(56, 113, 159);
+  /* color: rgb(71,141,200); */
+  color: white;
+  border: 2px solid rgba(71,141,200, 0.5);
   transition-duration: 0.4s;
+
 }
 
 /* Yellow */
