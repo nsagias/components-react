@@ -37,9 +37,7 @@
 
 .blue-inverse:hover {
   background: rgb(56, 113, 159);
-  /* color: rgb(71,141,200); */
   color: white;
-  border: 2px solid rgba(71,141,200, 0.5);
   transition-duration: 0.4s;
 
 }
@@ -67,8 +65,8 @@
 }
 
 .yellow-inverse:hover {
-  background: white;
-  color: rgb(255,202,72);
+  background: rgb(244, 196, 74);
+  color: white;
   transition-duration: 0.4s;
 }
 
