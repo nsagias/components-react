@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SignUpForm.css";
 
 export default function SignUpForm() {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  const onSubmit = (event: { preventDefault: () => void; }) => {
+    event.preventDefault();
+  };
+
   return (
     <>
       <form className="signup-form" action="/action_page.php" >
