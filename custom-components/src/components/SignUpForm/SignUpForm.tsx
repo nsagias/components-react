@@ -8,7 +8,7 @@ export default function SignUpForm() {
         <div className="container">
           <h1>Sign Up</h1>
           <p>Please fill in this form to create an account.</p>
-
+        
           
           <label><b>Email</b></label>
           <input type="email" placeholder="Enter Email" name="email" required />
@@ -23,10 +23,10 @@ export default function SignUpForm() {
           <p>By creating an account you agree to our <a className="t-c" href="#">Privacy</a>.</p>
 
           <div className="clearfix">
-            <button type="button" className="cancelbtn">Cancel</button>
-            <button type="submit" className="signupbtn">Sign Up</button>
+            <button type="button" className="cancel-btn">Cancel</button>
+            <button type="submit" className="signup-btn">Sign Up</button>
           </div>
-
+          
         </div>
       </form>
     
