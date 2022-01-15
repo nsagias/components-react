@@ -7,9 +7,9 @@ export default function LoginForm() {
     <>
     
       <form action="" method="post">
-    
-
+       
       <div className="container">
+      <h1>LOGIN FORM</h1>
         <label><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required />
 
@@ -25,8 +25,6 @@ export default function LoginForm() {
         <span className="span-password">Forgot <a href="#">password?</a></span>
       </div>
     </form>
-
-
 
     </>
   );
