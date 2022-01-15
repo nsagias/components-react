@@ -20,12 +20,12 @@ export default function LoginForm() {
       <div className="container">
        <a className="login-form"><h1>LOGIN FORM</h1></a>
        
-        <label className="username"><b>Username</b></label>
+        <label className="username"><b>Email</b></label>
         <input
-          type="text"
+          type="email"
           name="uname"
           value={email}
-          placeholder="Enter Username"
+          placeholder="Enter Email"
           onChange={(event) => setEmail(event.target.value)}
           required
         />
