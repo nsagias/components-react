@@ -9,29 +9,27 @@
   width: 100px;
 }
 
-
-
 /* Blue */
-.info {
+.blue {
   border-color: rgb(71,141,200);
   color: rgb(71,141,200);
   transition-duration: 0.4s;
 }
 
-.info:hover {
+.blue:hover {
   background: rgb(71,141,200);
   color: white;
 }
 
 /* Blue */
-.info-inverse {
+.blue-inverse {
   background-color: rgb(71,141,200);
   border-color: rgb(71,141,200);
   transition-duration: 0.4s;
   color: white;
 }
 
-.info-inverse:hover {
+.blue-inverse:hover {
   background: white;
   color: rgb(71,141,200);
 }
