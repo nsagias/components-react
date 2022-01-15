@@ -1,5 +1,9 @@
 
-form {border: 3px solid #881a1a;}
+form {
+  border: 3px solid rgb(56, 113, 159);
+  border-radius: 16px;
+  padding-bottom: 10px;
+}
 
 
 input[type=text], input[type=password] {
@@ -12,13 +16,14 @@ input[type=text], input[type=password] {
 }
 
 button {
-  background-color: #04AA6D;
+  background-color: rgb(56, 113, 159);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;  
   width: 100%;
+  transition-duration: 0.4s;
 }
 
 button:hover {
