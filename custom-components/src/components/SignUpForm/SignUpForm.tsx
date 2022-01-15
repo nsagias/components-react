@@ -40,9 +40,15 @@ export default function SignUpForm() {
           />
 
           <label className="password-confirm-label"><b>Confirm Password</b></label>
-          <input type="password" placeholder="Confirm Password" name="psw-repeat" required />
-          
-          
+          <input
+            type="password"
+            name="psw-confirm"
+            value={confirmPassword}
+            placeholder="Confirm Password"
+            onChange={(event) => setConfirmPassword(event.target.value)}
+            required
+          />
+                  
           <p>By creating an account you agree to our <a className="t-c" href="#">Privacy</a>.</p>
 
           <div className="clearfix">
