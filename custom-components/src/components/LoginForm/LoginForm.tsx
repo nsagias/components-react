@@ -10,10 +10,10 @@ export default function LoginForm() {
        
       <div className="container">
       <h1>LOGIN FORM</h1>
-        <label><b>Username</b></label>
+        <label className="username"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required />
 
-        <label ><b>Password</b></label>
+        <label className="pword" ><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required />
             
         <button type="submit">Login</button>
