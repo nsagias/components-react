@@ -73,27 +73,6 @@
 }
 
 
-/* Green */
-.success {
-  border-color: #04AA6D;
-  color: green;
-}
-
-.success:hover {
-  background-color: #04AA6D;
-  color: white;
-}
-
-/* Red */
-.danger {
-  border-color: #f44336;
-  color: rgba(255,0,0,1);;
-}
-
-.danger:hover {
-  background: rgba(255,0,0,.5);
-  color: white;
-}
 
 /* Gray */
 .default {
