@@ -22,14 +22,30 @@
 
 /* Blue */
 .info {
-  border-color: #2196F3;
-  color: dodgerblue;
+  border-color: rgb(71,141,200);
+  color: rgb(71,141,200);
+  transition-duration: 0.4s;
 }
 
 .info:hover {
-  background: #2196F3;
+  background: rgb(71,141,200);
   color: white;
 }
+
+/* Blue */
+.info-inverse {
+  background-color: rgb(71,141,200);
+  border-color: rgb(71,141,200);
+  transition-duration: 0.4s;
+  color: white;
+}
+
+.info-inverse:hover {
+  background: white;
+  color: rgb(71,141,200);
+}
+
+
 
 /* Orange */
 .warning {
