@@ -20,9 +20,9 @@ export default function LoginForm() {
         
       </div>
 
-      <div className="container" >
-        <button type="button" className="cancelbtn">Cancel</button>
-        <span className="psw">Forgot <a href="#">password?</a></span>
+      <div className="container-2" >
+        <button type="button" className="cancel-btn">Cancel</button>
+        <span className="span-password">Forgot <a href="#">password?</a></span>
       </div>
     </form>
 
