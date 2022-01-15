@@ -6,8 +6,9 @@ export default function ButtonPill() {
     <>
       <button className="button-pill info">Info</button>
       <button className="button-pill info-inverse">Info</button>
+      <button className="button-pill yellow">Yellow</button>
+      <button className="button-pill yellow-inverse">Yellow</button>
       <button className="button-pill success">Success</button>
-      <button className="button-pill warning">Warning</button>
       <button className="button-pill danger">Danger</button>
       <button className="button-pill default">Default</button>
     </>

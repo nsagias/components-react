@@ -9,16 +9,7 @@
   width: 100px;
 }
 
-/* Green */
-.success {
-  border-color: #04AA6D;
-  color: green;
-}
 
-.success:hover {
-  background-color: #04AA6D;
-  color: white;
-}
 
 /* Blue */
 .info {
@@ -45,16 +36,40 @@
   color: rgb(71,141,200);
 }
 
-
-
-/* Orange */
-.warning {
-  border-color: #ff9800;
-  color: orange;
+/* Yellow */
+.yellow {
+  border-color: rgb(255,202,72);
+  color: rgb(255,202,72);
+  transition-duration: 0.4s;
 }
 
-.warning:hover {
-  background: #ff9800;
+.yellow:hover {
+  background: rgb(255,202,72);
+  transition-duration: 0.4s;
+  color: white;
+}
+
+
+/* Yellow */
+.yellow-inverse {
+  border-color: rgb(255,202,72);
+  color: rgb(255,202,72);
+}
+
+.yellow-inverse:hover {
+  background: rgb(255,202,72);
+  color: white;
+}
+
+
+/* Green */
+.success {
+  border-color: #04AA6D;
+  color: green;
+}
+
+.success:hover {
+  background-color: #04AA6D;
   color: white;
 }
 
