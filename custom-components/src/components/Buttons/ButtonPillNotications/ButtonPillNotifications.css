@@ -5,16 +5,17 @@
   text-decoration: none;
   padding: 8px 20px;
   position: relative;
-  /* display: inline-block; */
+  display: inline-block;
   border-radius: 16px;
   cursor: pointer;
-  width: 100px;
+  width: 85px;
 }
 
-.blue-button-notification :hover {
+.blue-button-notification:hover {
   background: rgb(56, 113, 159);
   color: white;
   transition-duration: 0.4s;
+  /* background: red; */
 }
 
  .blue-button-notification-badge {
@@ -35,14 +36,14 @@
   text-decoration: none;
   padding: 8px 20px;
   position: relative;
-  /* display: inline-block; */
+  display: inline-block;
   border-radius: 16px;
   cursor: pointer;
-  width: 100px;
+  width: 85px;
 }
 
-.yellow-button-notification :hover {
-  background: red;
+.yellow-button-notification:hover {
+  background-color: rgba(255,202,72, 0.85);
 }
 
  .yellow-button-notification-badge {
