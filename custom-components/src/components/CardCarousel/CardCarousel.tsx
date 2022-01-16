@@ -3,22 +3,21 @@ import "./CardCarousel.css";
 
 export default function CardCarousel() {
 
-  const [curentDeg, setCurrentDeg] = useState("");
+  const [curentDeg, setCurrentDeg] = useState(0);
 
 
-  
   const handleClickNext = () => {
-    currdeg = currdeg - 60;
+    setCurrentDeg( curentDeg - 60);
    // "transform": "rotateY("+currdeg+"deg)";
   };
   const handleClickPrev = () => {
-    currdeg = currdeg + 60;
+    setCurrentDeg( curentDeg + 60);
     //"transform": "rotateY("+currdeg+"deg)";
   };
 
 
  let carousel = (".carousel")
- let currdeg  = 0;
+ 
 
 // $(".next").on("click", { d: "n" }, rotate);
 // $(".prev").on("click", { d: "p" }, rotate);
