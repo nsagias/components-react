@@ -1,4 +1,4 @@
-.button-pill {
+/* .button-pill {
   border: 1px solid black;
   background-color: white;
   color: black;
@@ -7,21 +7,27 @@
   cursor: pointer;
   border-radius: 16px;
   width: 100px;
-}
+} */
 
-/* Blue */
-.blue {
+/* Blue Solid */
+.blue-solid {
+  background-color: rgb(71,141,200);
   border-color: rgb(71,141,200);
-  color: rgb(71,141,200);
-  transition-duration: 0.4s;
-}
-
-.blue:hover {
-  background: rgb(71,141,200);
+  border: 2px solid rgba(71,141,200, 0.5);
   color: white;
   transition-duration: 0.4s;
+ 
 }
-.notification {
+
+.blue-solid:hover {
+  background: rgb(56, 113, 159);
+  color: white;
+  transition-duration: 0.4s;
+
+}
+
+
+.blue-button-notification {
   background-color: rgb(71,141,200);
   border: 1px solid rgb(71,141,200);
   color: white;
@@ -34,13 +40,13 @@
   width: 100px;
 }
 
-.notification:hover {
+.blue-button-notification :hover {
   background: rgb(56, 113, 159);
   color: white;
   transition-duration: 0.4s;
 }
 
- .badge {
+ .blue-button-notification-badge {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -51,59 +57,46 @@
 }
 
 
-/* Blue Inverse */
-.blue-inverse {
-  background-color: rgb(71,141,200);
-  border-color: rgb(71,141,200);
-  border: 2px solid rgba(71,141,200, 0.5);
-  color: white;
-  transition-duration: 0.4s;
- 
-}
-
-.blue-inverse:hover {
-  background: rgb(56, 113, 159);
-  color: white;
-  transition-duration: 0.4s;
-
-}
-
-/* Yellow */
-.yellow {
-  border-color: rgb(255,202,72);
-  color: rgb(255,202,72);
-  transition-duration: 0.4s;
-}
-
-.yellow:hover {
-  background: rgb(255,202,72);
-  color: white;
-  transition-duration: 0.4s;
-}
-
-
-/* Yellow Inverse */
-.yellow-inverse {
+/* Yellow Solid*/
+.yellow-solid {
   background-color: rgb(255,202,72);
   border-color: rgb(255,202,72);
   color: white;
   transition-duration: 0.4s;
 }
 
-.yellow-inverse:hover {
+.yellow-solid:hover {
   background: rgb(244, 196, 74);
-  color: white;
+ 
   transition-duration: 0.4s;
 }
 
 
-
-/* Gray */
-.default {
-  border-color: #e7e7e7;
-  color: black;
+.yellow-button-notification {
+  background-color: rgb(255,202,72);
+  border: 1px solid rgb(255,202,72);
+  color: white;
+  text-decoration: none;
+  padding: 8px 20px;
+  position: relative;
+  /* display: inline-block; */
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100px;
 }
 
-.default:hover {
-  background: #e7e7e7;
+.yellow-button-notification :hover {
+  background: rgb(255,202,72);
+  color: white;
+  transition-duration: 0.4s;
+}
+
+ .yellow-button-notification-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
 }

@@ -4,11 +4,14 @@ import "./ButtonPillNotifications.css";
 export default function ButtonPillNotifications() {
   return (
     <>
-      <a href="#" className="notification">
+      <a href="#" className="blue-button-notification">
         <span>Inbox</span>
-        <span className="badge">3</span>
+        <span className="blue-button-notification-badge">3</span>
       </a>
-      <button className="button-pill yellow-inverse">Yellow</button>
+      <a href="#" className="yellow-button-notification">
+        <span>Inbox</span>
+        <span className="yellow-button-notification-badge">3</span>
+      </a>
     </>
   );
 }
