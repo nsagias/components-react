@@ -15,15 +15,6 @@ caption {
   caption-side: bottom;
 }
 
-th[scope="col"] {
-  background-color: #696969;
-  /* color: #fff; */
-}
-
-th[scope="row"] {
-  background-color: #d7d9f2;
-}
-
 .customers {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -52,10 +43,7 @@ th[scope="row"] {
 }
 
 
-tfoot {
-  background-color: #0478aa;
-  color: #fff;
-}
+
 
 /* table css types*/
 /* table    { display: table }

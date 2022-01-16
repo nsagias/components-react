@@ -11,15 +11,13 @@ export default function Table() {
       
       <caption>This is the caption tag</caption>
         <tbody>
-
           <tr>
-            <th scope="col">Company</th>
-            <th scope="col">Contact</th>
-            <th scope="col">Country</th>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
           </tr>
-     
           <tr>
-            <th scope="row">Alfreds Futterkiste</th>
+            <td>Alfreds Futterkiste</td>
             <td>Maria Anders</td>
             <td>Germany</td>
           </tr>
@@ -69,13 +67,7 @@ export default function Table() {
             <td>France</td>
           </tr>
         </tbody>
-        <tfoot>
-          <tr>
-              <th scope="row">th</th>
-              <td> Footer td 1</td>
-              <td>Footer td 2</td>
-          </tr>
-        </tfoot>
+    
       </table>
     </>
   );
