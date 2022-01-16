@@ -11,13 +11,15 @@ export default function Table() {
       
       <caption>This is the caption tag</caption>
         <tbody>
+
           <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
+            <th scope="col">Company</th>
+            <th scope="col">Contact</th>
+            <th scope="col">Country</th>
           </tr>
+     
           <tr>
-            <td>Alfreds Futterkiste</td>
+            <th scope="row">Alfreds Futterkiste</th>
             <td>Maria Anders</td>
             <td>Germany</td>
           </tr>
