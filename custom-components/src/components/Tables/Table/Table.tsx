@@ -5,8 +5,10 @@ export default function Table() {
   return (
     <>
     <h1>A Table</h1>
+    
 
       <table className="customers">
+      <caption>This is the caption tag</caption>
         <tr>
           <th>Company</th>
           <th>Contact</th>
