@@ -79,27 +79,10 @@
 }
 .next:active, .prev:active {
   top: 104px;
-  /* box-shadow: 0 1px 0 #999; */
+  box-shadow: 0 1px 0 #999;
   border-color: rgb(71,141,200);
   border: 2px solid rgba(71,141,200, 0.5);
 }
 .next { right: 5em; }
 .prev { left: 5em; }
 
-
-/* Blue Inverse */
-.blue-inverse {
-  background-color: rgb(71,141,200);
-  border-color: rgb(71,141,200);
-  border: 2px solid rgba(71,141,200, 0.5);
-  color: white;
-  transition-duration: 0.4s;
- 
-}
-
-.blue-inverse:hover {
-  background: rgb(56, 113, 159);
-  color: white;
-  transition-duration: 0.4s;
-
-}
