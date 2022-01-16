@@ -1,5 +1,4 @@
 import Reac, { useState } from "react";
-import { transform } from "typescript";
 import "./CardCarousel.css";
 
 export default function CardCarousel() {
@@ -8,34 +7,11 @@ export default function CardCarousel() {
 
 
   const handleClickNext = () => {
-    setCurrentDeg( curentDeg - 60);
-   // "transform": "rotateY("+currdeg+"deg)";
+    setCurrentDeg( curentDeg + 60);
   };
   const handleClickPrev = () => {
-    setCurrentDeg( curentDeg + 60);
-    //"transform": "rotateY("+currdeg+"deg)";
+    setCurrentDeg( curentDeg - 60);
   };
-
-
- let carousel = (".carousel")
- 
-
-// $(".next").on("click", { d: "n" }, rotate);
-// $(".prev").on("click", { d: "p" }, rotate);
-
-//  function rotate () {
-
-//   if(event.data.d=="n"){
-
-//     currdeg = currdeg - 60;
-//   }
-//   if(event.data.d=="p"){
-//     currdeg = currdeg + 60;
-//   }
-//   carousel.css({
-//     "transform": "rotateY("+currdeg+"deg)"
-//   });
-// }
 
   return (
     <>
@@ -50,7 +26,7 @@ export default function CardCarousel() {
         </div>
       </div>
       <div className="next" onClick={handleClickNext}>Next</div>
-      <div className="prev">Prev</div>      
+      <div className="prev" onClick={handleClickPrev}>Prev</div>      
     </>
   );
 }
