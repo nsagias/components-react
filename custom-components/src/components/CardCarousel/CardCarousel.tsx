@@ -1,4 +1,5 @@
 import Reac, { useState } from "react";
+import { transform } from "typescript";
 import "./CardCarousel.css";
 
 export default function CardCarousel() {
@@ -39,7 +40,7 @@ export default function CardCarousel() {
   return (
     <>
       <div className="container">
-        <div className="carousel">
+        <div className="carousel" style={{transform: `rotateY(${curentDeg}deg`}}>
           <div className="item a">A</div>
           <div className="item b">B</div>
           <div className="item c">C</div>
@@ -48,7 +49,7 @@ export default function CardCarousel() {
           <div className="item f">F</div>
         </div>
       </div>
-      <div className="next">Next</div>
+      <div className="next" onClick={handleClickNext}>Next</div>
       <div className="prev">Prev</div>      
     </>
   );
