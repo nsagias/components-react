@@ -6,11 +6,12 @@ import ButtonPillNotifications from './components/Buttons/ButtonPillNotications/
 import CardCarousel from './components/CardCarousel/CardCarousel';
 import LoginForm from './components/LoginForm/LoginForm';
 import SignUpForm from './components/SignUpForm/SignUpForm';
+import Table from './components/Tables/Table/Table';
 
 function App() {
   return (
     <div className="App">
-      <ButtonPillNotifications />
+      <Table />
     </div>
   );
 }
