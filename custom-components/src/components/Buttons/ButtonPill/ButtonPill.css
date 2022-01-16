@@ -1,0 +1,83 @@
+.button-pill {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 100px;
+}
+
+/* Blue */
+.blue {
+  border-color: rgb(71,141,200);
+  color: rgb(71,141,200);
+  transition-duration: 0.4s;
+}
+
+.blue:hover {
+  background: rgb(71,141,200);
+  color: white;
+  transition-duration: 0.4s;
+}
+
+
+
+
+/* Blue Inverse */
+.blue-inverse {
+  background-color: rgb(71,141,200);
+  border-color: rgb(71,141,200);
+  border: 2px solid rgba(71,141,200, 0.5);
+  color: white;
+  transition-duration: 0.4s;
+ 
+}
+
+.blue-inverse:hover {
+  background: rgb(56, 113, 159);
+  color: white;
+  transition-duration: 0.4s;
+
+}
+
+/* Yellow */
+.yellow {
+  border-color: rgb(255,202,72);
+  color: rgb(255,202,72);
+  transition-duration: 0.4s;
+}
+
+.yellow:hover {
+  background: rgb(255,202,72);
+  color: white;
+  transition-duration: 0.4s;
+}
+
+
+/* Yellow Inverse */
+.yellow-inverse {
+  background-color: rgb(255,202,72);
+  border-color: rgb(255,202,72);
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.yellow-inverse:hover {
+  background: rgb(244, 196, 74);
+  color: white;
+  transition-duration: 0.4s;
+}
+
+
+
+/* Gray */
+.default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
