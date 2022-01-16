@@ -2,6 +2,13 @@ import React from "react";
 import "./Table.css";
 
 export default function Table() {
+
+  const tableHeaderNames = ["Company", "Contact", "Country"];
+  const tableRowOne = ["Alfreds Futterkiste",  "Maria Anders", "Germany"];
+  const tableRowTwo = ["Berglunds snabbköp", "Christina Berglund", "Sweden"];
+
+  
+
   return (
     <>
     <h1>A Table</h1>
@@ -67,7 +74,7 @@ export default function Table() {
             <td>France</td>
           </tr>
         </tbody>
-    
+
       </table>
     </>
   );
