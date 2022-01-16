@@ -22,17 +22,22 @@
   transition-duration: 0.4s;
 }
 .notification {
-  background-color: #555;
+  background-color: rgb(71,141,200);
+  border: 1px solid rgb(71,141,200);
   color: white;
   text-decoration: none;
-  padding: 15px 26px;
+  padding: 8px 20px;
   position: relative;
-  display: inline-block;
-  border-radius: 2px;
+  /* display: inline-block; */
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100px;
 }
 
 .notification:hover {
-  background: red;
+  background: rgb(56, 113, 159);
+  color: white;
+  transition-duration: 0.4s;
 }
 
  .badge {
