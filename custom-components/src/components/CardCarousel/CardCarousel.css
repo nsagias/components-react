@@ -69,7 +69,7 @@
   background-color: rgb(71,141,200);
   border-radius: 5px;
   border-top: 1px solid #FFF;
-  box-shadow: 0 5px 0 #999;
+  /* box-shadow: 0 5px 0 #999; */
   transition: box-shadow 0.1s, top 0.1s;
 }
 .next:hover, .prev:hover { 
@@ -79,9 +79,9 @@
 }
 .next:active, .prev:active {
   top: 104px;
-  box-shadow: 0 1px 0 #999;
+  /* box-shadow: 0 1px 0 #999; */
   border-color: rgb(71,141,200);
-  border: 2px solid rgba(71,141,200, 0.5);
+  border: 1px solid rgba(71,141,200, 0.5);
 }
 .next { right: 5em; }
 .prev { left: 5em; }
