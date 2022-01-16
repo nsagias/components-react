@@ -64,6 +64,13 @@ export default function Table() {
           <td>Marie Bertrand</td>
           <td>France</td>
         </tr>
+          <tfoot>
+            <tr>
+                <th scope="row">th</th>
+                <td>Footer td 1</td>
+                <td>Footer td 2</td>
+            </tr>
+          </tfoot>
       </table>
     </>
   );
