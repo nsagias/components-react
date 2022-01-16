@@ -4,10 +4,29 @@ import "./Table.css";
 export default function Table() {
 
   const tableHeaderNames = ["Company", "Contact", "Country"];
-  const tableRowOne = ["Alfreds Futterkiste",  "Maria Anders", "Germany"];
-  const tableRowTwo = ["Berglunds snabbköp", "Christina Berglund", "Sweden"];
+  const tableRowOne = ["Alfreds",  "Maria Anders", "Germany"];
+  const tableRowTwo = ["Berglunds", "Christina Berglund", "Sweden"];
 
-  
+  const exampleTableStructure1 = {
+    tableName : "A table",
+    tableHeaderInfo: [
+      "Company", "Contact", "Country"
+    ],
+    tableCaption: "This is the caption tag",
+    contactInfo:
+    [
+      { id: 1, company: "Alfreds", contact: "Mary Mary", country: "Canada" },
+      { id: 2, company: "Bergman", contact: "Chstina Tina", country: "France" },
+      { id: 3, company: "Charlie", contact: "Bob Dingo", country: "Australia" },
+      { id: 4, company: "Darwin", contact: "Dr. Darwin", country: "United Kingdom" },
+      { id: 5, company: "Ever Fun", contact: "Fun Police", country: "United States" },
+      { id: 6, company: "Form and Able", contact: "Stundent Somewhere", country: "Spain" },
+      { id: 7, company: "Gregarious Social", contact: "QRCode Avatar", country: "Norway" },
+      { id: 8, company: "Hip", contact: "Everyone is cool here", country: "Italy" },
+      { id: 9, company: "I.O.", contact: "Any Myth", country: "Greece" }
+    ]
+  };
+
 
   return (
     <>
