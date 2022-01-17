@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Table.css";
 
-const data = {
+const data: IData  = {
   tableName : "A Table",
   tableHeaderList: [ 
     {id: 1, headerName:"Company"}, 
@@ -44,21 +44,11 @@ interface IContactList {
   [index: number]: IContactItem;
 }
 
-
-
 interface IData {
   tableName: string;
-  tableHeaderList: {
-      id: number;
-      headerName: string;
-  }[];
+  tableHeaderList: IHeaderList;
   tableCaption: string;
-  contactList: {
-      id: number;
-      company: string;
-      contact: string;
-      country: string;
-  }[];
+  contactList: IContactList;
 }
 
 export default function Table() {
