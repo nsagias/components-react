@@ -8,9 +8,9 @@ export default function Table() {
   const data = {
     tableName : "A Table",
     tableHeaderList: [ 
-      {id: 1, companysName:"Company"}, 
-      {id: 2, contactsName:"Contact"},
-      {id: 3, contactsCountry: "Country"}
+      {id: 1, headerName:"Company"}, 
+      {id: 2, headerName:"Contact"},
+      {id: 3, headerName: "Country"}
     ],
     tableCaption: "This is the caption tag!",
     contactList:
@@ -27,14 +27,14 @@ export default function Table() {
     ]
   };
 
-
-  const tableName = data.tableName;
-  const tableCaption = data.tableCaption;
   const parsedHeader = Array.isArray(data.tableHeaderList) && data.tableHeaderList.map(header => {
     <>
-      <th>Company</th>
+      <th key={header.id}>{header.headerName}</th>
     </>
-  })
+  });
+  const tableName = data.tableName;
+  const tableCaption = data.tableCaption;
+  
 
   return (
     <>
