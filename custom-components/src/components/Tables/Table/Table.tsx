@@ -10,7 +10,7 @@ export default function Table() {
     tableHeaderList: [ 
       {id: 1, headerName:"Company"}, 
       {id: 2, headerName:"Contact"},
-      {id: 3, headerName: "Country"}
+      {id: 3, headerName:"Country"}
     ],
     tableCaption: "This is the caption tag!",
     contactList:
@@ -27,17 +27,20 @@ export default function Table() {
     ]
   };
 
-  const parsedHeader = Array.isArray(data.tableHeaderList) && data.tableHeaderList.map(header => {
-    <>
-      <th key={header.id}>{header.headerName}</th>
-    </>
-  });
+  
   const tableName = data.tableName;
   const tableCaption = data.tableCaption;
+  const headerList = data.tableHeaderList;
+  // console.log(headerList)
+  const parsedHeader = Array.isArray(headerList) && headerList.map(header => {
   
+      <th key={header.id}>{header.headerName}</th>  
+  });
+//  console.log(parsedHeader)
+
 
   return (
-    <>
+    <div>
     <h1>{tableName}</h1>
     
    
@@ -46,9 +49,9 @@ export default function Table() {
       <caption>{tableCaption}</caption>
         <tbody>
           <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Country</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
           </tr>
           <tr>
             <td>Alfreds Futterkiste</td>
@@ -103,6 +106,6 @@ export default function Table() {
         </tbody>
 
       </table>
-    </>
+    </div>
   );
 }
