@@ -31,12 +31,20 @@ export default function Table() {
   const tableName = data.tableName;
   const tableCaption = data.tableCaption;
   const headerList = data.tableHeaderList;
+  const contactList = data.contactList;
   // console.log(headerList)
   const parsedHeader = Array.isArray(headerList) && headerList.map(header => {
   
       <th key={header.id}>{header.headerName}</th>  
   });
-//  console.log(parsedHeader)
+
+  const parsedContactList = Array.isArray(contactList) && contactList.map(contact => {
+    <tr>
+      <td>{}</td>
+      <td>{}</td>
+      <td>{}</td>
+    </tr>
+});
 
 
   return (
@@ -48,11 +56,7 @@ export default function Table() {
       
       <caption>{tableCaption}</caption>
         <tbody>
-          <tr>
-            <th>1</th>
-            <th>2</th>
-            <th>3</th>
-          </tr>
+       
           <tr>
             <td>Alfreds Futterkiste</td>
             <td>Maria Anders</td>
