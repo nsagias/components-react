@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Table.css";
 
 const data = {
@@ -29,12 +29,13 @@ export default function Table() {
   const [headerList, setHeadList] = useState(data.tableHeaderList);
   const [contactList, setContactList] = useState(data.contactList);
 
- 
- 
   // const tableName = data.tableName;
   // const tableCaption = data.tableCaption;
   // const headerList = data.tableHeaderList;
   // const contactList = data.contactList;
+  useEffect( () => {
+    
+  }, []);
 
   const parsedHeader = Array.isArray(headerList) && headerList.map(header => (
       <th key={header.id}>{header.headerName}</th>  
