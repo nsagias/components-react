@@ -3,11 +3,9 @@ import "./Table.css";
 
 export default function Table() {
 
-  const tableHeaderNames = ["Company", "Contact", "Country"];
-  const tableRowOne = ["Alfreds",  "Maria Anders", "Germany"];
-  const tableRowTwo = ["Berglunds", "Christina Berglund", "Sweden"];
 
-  const exampleTableStructure1 = {
+
+  const data = {
     tableName : "A table",
     tableHeaderInfo: [
       "Company", "Contact", "Country"
