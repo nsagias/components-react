@@ -40,8 +40,8 @@ interface IHeaderList {
 }
 
 export default function Table() {
-  const [tableName, setTableName] = useState("");
-  const [tableCaption, setTableCaption] = useState("");
+  const [tableName, setTableName] = useState<string>("");
+  const [tableCaption, setTableCaption] = useState<string>("");
   const [headerList, setHeadList] = useState<IHeaderList>();
   const [contactList, setContactList] = useState<IContactList>();
 
