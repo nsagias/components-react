@@ -24,26 +24,48 @@ const data = {
 };
 
 
-interface IContactList {
-  [index: number]: {  
-    id: number; 
-    company: string; 
-    contact: string; 
-    country: string;
-  };
+interface IHeaderitem {
+  id: number;
+  headerName: string;
 }
+
 interface IHeaderList {
-  [index: number]: {  
-    id: number;
-    headerName: string;
-  };
+  [index: number]: IHeaderitem;
+}
+
+interface IContactItem {
+  id: number; 
+  company: string; 
+  contact: string; 
+  country: string;
+}
+
+interface IContactList {
+  [index: number]: IContactItem;
+}
+
+
+
+interface IData {
+  tableName: string;
+  tableHeaderList: {
+      id: number;
+      headerName: string;
+  }[];
+  tableCaption: string;
+  contactList: {
+      id: number;
+      company: string;
+      contact: string;
+      country: string;
+  }[];
 }
 
 export default function Table() {
   const [tableName, setTableName] = useState<string>("");
   const [tableCaption, setTableCaption] = useState<string>("");
-  const [headerList, setHeadList] = useState<IHeaderList>();
-  const [contactList, setContactList] = useState<IContactList>();
+  const [headerList, setHeadList] = useState<IHeaderList>([]);
+  const [contactList, setContactList] = useState<IContactList>([]);
 
   useEffect( () => {
     setTableName(data.tableName);
@@ -52,11 +74,11 @@ export default function Table() {
     setContactList(data.contactList);
   }, []);
 
-  const parsedHeader = Array.isArray(headerList) && headerList.map(header => (
+  const parsedHeader: false | JSX.Element[]  = Array.isArray(headerList) && headerList.map(header => (
       <th key={header.id}>{header.headerName}</th>  
   ));
 
-  const parsedContactList = Array.isArray(contactList) && contactList.map(contact => (
+  const parsedContactList: false | JSX.Element[]  = Array.isArray(contactList) && contactList.map(contact => (
     <tr key={contact.id}>
       <td>{contact.company}</td>
       <td>{contact.contact}</td>
