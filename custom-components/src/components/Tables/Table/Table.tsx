@@ -6,12 +6,14 @@ export default function Table() {
 
 
   const data = {
-    tableName : "A table",
-    tableHeaderInfo: [
-      "Company", "Contact", "Country"
+    tableName : "A Table",
+    tableHeaderList: [ 
+      {id: 1, companysName:"Company"}, 
+      {id: 2, contactsName:"Contact"},
+      {id: 3, contactsCountry: "Country"}
     ],
-    tableCaption: "This is the caption tag",
-    contactInfo:
+    tableCaption: "This is the caption tag!",
+    contactList:
     [
       { id: 1, company: "Alfreds", contact: "Mary Mary", country: "Canada" },
       { id: 2, company: "Bergman", contact: "Chstina Tina", country: "France" },
@@ -26,14 +28,22 @@ export default function Table() {
   };
 
 
+  const tableName = data.tableName;
+  const tableCaption = data.tableCaption;
+  const parsedHeader = Array.isArray(data.tableHeaderList) && data.tableHeaderList.map(header => {
+    <>
+      <th>Company</th>
+    </>
+  })
+
   return (
     <>
-    <h1>A Table</h1>
+    <h1>{tableName}</h1>
     
    
       <table className="customers">
       
-      <caption>This is the caption tag</caption>
+      <caption>{tableCaption}</caption>
         <tbody>
           <tr>
             <th>Company</th>
