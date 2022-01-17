@@ -76,7 +76,6 @@ export default function Table() {
     </tr>
   ));
 
-
   return (
     <div>
       <h1>{tableName}</h1>
@@ -84,9 +83,9 @@ export default function Table() {
       <caption>{tableCaption}</caption>
         <tbody>
         <tr>
-        {parsedHeader}
+          {parsedHeader}
         </tr>
-         {parsedContactList}   
+          {parsedContactList}   
         </tbody>
       </table>
     </div>
