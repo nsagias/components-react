@@ -51,7 +51,7 @@ export default function Table() {
 
   return (
     <div>
-    <h1>{tableName}</h1>
+      <h1>{tableName}</h1>
       <table className="customers">
       <caption>{tableCaption}</caption>
         <tbody>
