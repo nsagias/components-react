@@ -64,11 +64,11 @@ export default function Table() {
     setContactList(data.contactList);
   }, []);
 
-  const parsedHeader: false | JSX.Element[]  = Array.isArray(headerList) && headerList.map(header => (
+  const parsedHeader: false | JSX.Element[] = Array.isArray(headerList) && headerList.map(header => (
       <th key={header.id}>{header.headerName}</th>  
   ));
 
-  const parsedContactList: false | JSX.Element[]  = Array.isArray(contactList) && contactList.map(contact => (
+  const parsedContactList: false | JSX.Element[] = Array.isArray(contactList) && contactList.map(contact => (
     <tr key={contact.id}>
       <td>{contact.company}</td>
       <td>{contact.contact}</td>
