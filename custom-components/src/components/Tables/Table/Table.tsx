@@ -23,18 +23,33 @@ const data = {
   ]
 };
 
-export default function Table() {
-  const [tableName, setTableName] = useState(data.tableName);
-  const [tableCaption, setTableCaption] = useState(data.tableCaption);
-  const [headerList, setHeadList] = useState(data.tableHeaderList);
-  const [contactList, setContactList] = useState(data.contactList);
 
-  // const tableName = data.tableName;
-  // const tableCaption = data.tableCaption;
-  // const headerList = data.tableHeaderList;
-  // const contactList = data.contactList;
+interface IContactList {
+  [index: number]: {  
+    id: number; 
+    company: string; 
+    contact: string; 
+    country: string;
+  };
+}
+interface IHeaderList {
+  [index: number]: {  
+    id: number;
+    headerName: string;
+  };
+}
+
+export default function Table() {
+  const [tableName, setTableName] = useState("");
+  const [tableCaption, setTableCaption] = useState("");
+  const [headerList, setHeadList] = useState<IHeaderList>();
+  const [contactList, setContactList] = useState<IContactList>();
+
   useEffect( () => {
-    
+    setTableName(data.tableName);
+    setTableCaption(data.tableCaption);
+    setHeadList(data.tableHeaderList);
+    setContactList(data.contactList);
   }, []);
 
   const parsedHeader = Array.isArray(headerList) && headerList.map(header => (
