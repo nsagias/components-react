@@ -1,3 +1,9 @@
 body {
   background-color: darksalmon;
 }
+
+.speed-control {
+  position: absolute;
+  bottom: 20px;
+  align-items: center;
+}
