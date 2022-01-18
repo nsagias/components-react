@@ -8,6 +8,7 @@ export default function AutoText() {
         <div className="speed-control">
           <label htmlFor="speed">Speed</label>
           <input 
+            className="input-speed"
             type="number"
             name="speed"
             id="speed"

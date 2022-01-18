@@ -9,3 +9,15 @@ body {
   padding: 10px 20px;
   font-size: 18px;
 }
+
+.input-speed {
+  width: 50px;
+  padding: 5px;
+  font-size: 18px;
+  background-color: darksalmon;
+  text-align: center;
+}
+
+.input-speed:focus {
+  outline: none;
+}
