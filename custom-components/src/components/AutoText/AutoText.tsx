@@ -1,25 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./AutoText.css";
 
 export default function AutoText() {
+  let [autoTextShow, setAutoTextShow] = useState("");
 
   const autoText = "Auto Text Effect...";
-  let autoTextIndex = 1;
-  // let autoTextShow = autoText.slice(0, autoTextIndex);
-  let autoTextShow;
+  const autoTextSplit =  autoText.split('')
 
-  const autoTextWriter = () => {
-    autoTextShow = autoText.slice(0, autoTextIndex);
-    autoTextIndex++;
+  let parsedAutotTextSplit = Array.isArray(autoTextSplit) && autoTextSplit.map(text => (
+    <h1 id="text">{autoTextShow}</h1>
+  ));
 
-    if (autoTextIndex > autoText.length) {
-;
-    }
-    setTimeout(autoTextWriter, 1000)
 
-  }
+  // autoTextWriter();
  
-  autoTextWriter();
+    // let autoTextIndex = 0;
+    // autoTextShow = autoText.slice(0, autoTextIndex);
+    // autoTextIndex++;
+
+    // if (autoTextIndex > autoText.length) {
+
+    // }
+    
+
+    // for (let i = 0; i < autoText.length; i++) {
+
+    //   setTimeout(() =>{}, 1000)
+    //   console.log("bingo");
+    // }
+    
+  
+
+
+  
 
 
   return (
