@@ -2,9 +2,15 @@ import React from "react";
 import "./AutoText.css";
 
 export default function AutoText() {
+
+  const autoText = "Auto Text Effect...";
+  let autoTextIndex = 1;
+  let autoTextShow = autoText.slice(0, autoTextIndex);
+
+
   return (
     <>
-        <h1 id="text">Auto Text Effect...</h1>
+        <h1 id="text">{autoTextShow}</h1>
         <div className="speed-control">
           <label htmlFor="speed">Speed</label>
           <input 
