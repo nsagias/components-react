@@ -6,7 +6,7 @@ export default function MobileMenu() {
     <>
     <div className="mobile-container">
     <div className="topnav">
-    <a href="#home" className="active">Logo</a>
+      <a href="#home" className="active">Logo</a>
       <div id="myLinks">
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
