@@ -1,7 +1,16 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./MobileMenu.css"
+// import { IconProp, IconLookup, IconPrefix, IconName,  } from "@fortawesome/fontawesome-svg-core";
 
 export default function MobileMenu() {
+
+  
+  
+ 
+  // type IconProp = IconName | [IconPrefix, IconName] | IconLookup;
+  // const FaBars: IconProp = ['fa-solid', 'fa-bars']
+
   return (
     <>
     <div className="mobile-container">
@@ -13,7 +22,7 @@ export default function MobileMenu() {
         <a href="#about">About</a>
       </div>
       <a href="javascript:void(0);" className="icon" >
-      <i className="fa-solid fa-bars"></i>
+      <FontAwesomeIcon icon={FaBars}/>
       </a>
     </div>
         <div className="container-content">
