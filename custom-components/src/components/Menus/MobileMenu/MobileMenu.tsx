@@ -13,7 +13,7 @@ export default function MobileMenu() {
         <a href="#about">About</a>
       </div>
       <a href="javascript:void(0);" className="icon" >
-        <i className="fa fa-bars"></i>
+      <i className="fa-solid fa-bars"></i>
       </a>
     </div>
         <div className="container-content">
